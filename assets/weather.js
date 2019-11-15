@@ -12,7 +12,8 @@ $( document ).ready(function() {
                 console.log(response)
 
                 $("#city").text(response.name);
-                // $("date").text(response.coord.dt);
+               
+                 $("#date").moment().format("MMM Do YY");
                 // $("#icon").html(response.weather[0].icon);
                 $("#temp").text("Temperature: " + response.main.temp);
                 $("#humid").text("Humidity: " + response.main.humidity);
